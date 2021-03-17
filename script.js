@@ -6,9 +6,14 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword(){
     
   var passwordLength = "";
-  while (passwordLength <8 || passwordLength > 128 || isNaN(passwordLength)){
+  var password = "";
+  // while (passwordLength <8 || passwordLength > 128 || isNaN(passwordLength))
+  // {
     prompt ("Select a password length between 8 and 128 characters");
-  }
+  // }
+  upperCase = confirm("Do you want uppercase characters?");
+  lowerCase = confirm("Do you want lowercase characters?");
+
   
 };
 function writePassword() {
