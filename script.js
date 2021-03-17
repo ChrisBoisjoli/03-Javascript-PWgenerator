@@ -2,8 +2,10 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-
-
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var number = "0123456789";
+var special = "~!@#$%^&*+|\/";
 
 function generatePassword(){
     
@@ -13,10 +15,10 @@ function generatePassword(){
   // {
     prompt ("Select a password length between 8 and 128 characters");
   // }
-  upperCase = confirm("Do you want uppercase characters?");
-  lowerCase = confirm("Do you want lowercase characters?");
-  numeric = confirm("Do you want numeric characters?");
-  special = confirm("Do you want special characters?");
+  upperCaseChoice = confirm("Do you want uppercase characters?");
+  lowerCaseChoice = confirm("Do you want lowercase characters?");
+  numericChoice = confirm("Do you want numeric characters?");
+  specialChoice = confirm("Do you want special characters?");
   
 };
 function writePassword() {
