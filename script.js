@@ -24,13 +24,18 @@ function generatePassword(){
     securePassword += upperCase
   }else {alert("No uppercase letters")};
 
-
   lowerCaseChoice = confirm("Do you want lowercase characters?")
   if (lowerCaseChoice == true){
     alert("Your password will have lowercase")
     securePassword += lowerCase
   }else {alert("No lowercase letters")};
-  numericChoice = confirm("Do you want numeric characters?");
+
+  numericChoice = confirm("Do you want numeric characters?")
+  if (numericChoice == true){
+    alert("Your password will have numbers")
+    securePassword += number
+  }else {alert("No numbers")};
+  
   specialChoice = confirm("Do you want special characters?");
   
 };
