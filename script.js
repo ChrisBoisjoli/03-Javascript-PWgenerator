@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+securePassword = "";
 // Write password to the #password input
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -15,7 +16,15 @@ function generatePassword(){
   // {
     prompt ("Select a password length between 8 and 128 characters");
   // }
-  upperCaseChoice = confirm("Do you want uppercase characters?");
+  // alert("Your secure password will be " = passwordLength + "characters long");
+
+  upperCaseChoice = confirm("Do you want uppercase characters?")
+  if (upperCaseChoice == true){
+    alert("Your password will have uppercase")
+    securePassword += upperCase
+  }else {alert("No uppercase letters")};
+
+
   lowerCaseChoice = confirm("Do you want lowercase characters?");
   numericChoice = confirm("Do you want numeric characters?");
   specialChoice = confirm("Do you want special characters?");
