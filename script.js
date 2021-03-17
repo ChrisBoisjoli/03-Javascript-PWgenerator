@@ -3,6 +3,8 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 
+
+
 function generatePassword(){
     
   var passwordLength = "";
@@ -13,7 +15,8 @@ function generatePassword(){
   // }
   upperCase = confirm("Do you want uppercase characters?");
   lowerCase = confirm("Do you want lowercase characters?");
-
+  numeric = confirm("Do you want numeric characters?");
+  special = confirm("Do you want special characters?");
   
 };
 function writePassword() {
