@@ -35,8 +35,12 @@ function generatePassword(){
     alert("Your password will have numbers")
     securePassword += number
   }else {alert("No numbers")};
-  
-  specialChoice = confirm("Do you want special characters?");
+
+  specialChoice = confirm("Do you want special characters?")
+  if (specialChoice == true){
+    alert("Your password will have special characters")
+    securePassword += special
+  }else {alert("No special characters")};
   
 };
 function writePassword() {
