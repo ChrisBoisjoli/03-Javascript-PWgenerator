@@ -25,7 +25,11 @@ function generatePassword(){
   }else {alert("No uppercase letters")};
 
 
-  lowerCaseChoice = confirm("Do you want lowercase characters?");
+  lowerCaseChoice = confirm("Do you want lowercase characters?")
+  if (lowerCaseChoice == true){
+    alert("Your password will have lowercase")
+    securePassword += lowerCase
+  }else {alert("No lowercase letters")};
   numericChoice = confirm("Do you want numeric characters?");
   specialChoice = confirm("Do you want special characters?");
   
