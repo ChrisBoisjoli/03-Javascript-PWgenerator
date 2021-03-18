@@ -9,11 +9,17 @@ var number = "0123456789";
 var special = "~!@#$%^&*+|\/";
 
 function generatePassword(){
-    
-  var passwordLength = prompt ("Select a password length between 8 and 128 characters");
-  if (passwordLength <8 || passwordLength > 128 || isNaN){
-    alert("Your password will be " + passwordLength + " characters");
-  };
+    while (passwordLength <8 || passwordLength > 128 || isNaN(passwordLength)){
+      var passwordLength = prompt ("Select a password length between 8 and 128 characters");
+      if (passwordLength <8 || passwordLength > 128){
+        alert("Choose a valid number");
+      };
+      if (isNaN(passwordLength)){
+        alert("not a number");
+      }
+    }
+  
+  
     
 
   var password = "";
